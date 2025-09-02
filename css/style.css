@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    height: 30vh;
+}
+
+#logo{
+    width: 60%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#logo_cerdos{
+    border-radius: 100%;
+    width: 20%;
+}
+
+#botones{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    width: 30%;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#lupa{
+    width: 25px;
+}
