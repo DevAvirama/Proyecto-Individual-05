@@ -1,147 +1,100 @@
+/*ESTILOS SECCION DE BIENVENIDA*/
+
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: Calibri;
+}
+
+#landing-page {
+    background-image: url(../img/bkimage.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+
+}
+
+#landing-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1; 
 }
 
 header{
     display: flex;
     justify-content: space-around;
-    align-items: start;
-    height: 45vh;
-    background: #2A7B9B;
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
-}
-
-#logo{
-    width: 60%;
-    display: flex;
-    justify-content: start;
     align-items: center;
-    margin-top: 20px;
+    height: 15vh;
 }
 
-#logo_cerdos{
-    border-radius: 100%;
-    width: 20%;
-}
-
-#botones{
-    display: flex;
-    justify-content: space-around;
-    align-items: start;
-    width: 30%;
-}
-
-button{
-    width: 150px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    background-color: white;
-    border: 3px solid black;
-    border-radius: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+nav a{
+    margin-left: 20px;
+    margin-right: 20px;
     font-weight: 600;
+    text-decoration: none;
+    font-size: 1.2rem;
 }
 
-button:hover{
-    background-color: black;
-    transition: 0.7s;
-    width: 160px;
-    height: 60px;
-    border: grey;
-    color:  white;
-    font-weight: 700;
-}
-
-#lupa{
-    width: 25px;
+#logo-sena{
+    width: 7%;
+    border-radius: 100%;
 }
 
 #bienvenida{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 85vh;
+    text-align: center;
+}
+
+#bienvenida article{
+    display: flex;
     flex-direction: column;
-    text-align: center;
-    height: 45vh;
-}
-
-#bienvenida h1{
-    margin: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-}
-
-#bienvenida p{
-    margin: 0px 30px 30px 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-}
-
-#servicios{
-    display: flex;
-    justify-content: space-around;
     align-items: center;
-    height: 45vh;
-    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
 }
 
-.cerdo1{
-    width: 10%;
-    border-radius: 100%;
+#bienvenida article p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: 50%;
+    margin-top: 3%;
 }
 
-#descripcion{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    height: 45vh;
+h1{
+    font-size: 5rem;
+    width: 60%;
 }
 
-#descripcion p{
-    margin: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-}
-
-#desarrolladores{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    height: 45vh;
-    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
-
-}
-
-#desarrolladores img{
+.boton_encabezado{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
     width: 12%;
+    height: 6vh;
+    border-radius: 20px;
+    background-color: #39A900;
+    border: 2px solid black;;
 }
 
-footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    height: 45vh;
-    font-family: Arial, Helvetica, sans-serif;
+#bienvenida article button{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 12%;
+    height: 6vh;
+    border-radius: 20px;
+    background-color: #39A900;
+    border: 2px solid black;
+    margin-top: 3%;
 }
 
-footer p{
-    margin: 50px;
-}
-
-footer div{
-    margin: 50px;
-}
-
-.redes_sociales{
-    width: 50px;
-    margin: 10px;
-}
+/*ESTILOS SECCION DE FUNCIONALIDADES*/
